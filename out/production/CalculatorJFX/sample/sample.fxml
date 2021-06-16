@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+       <GridPane alignment="CENTER" hgap="5.0" layoutX="16.0" layoutY="115.0" prefHeight="371.0" prefWidth="368.0" vgap="5.0">
+           <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="21.0" minWidth="10.0" prefWidth="21.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="78.0" minWidth="10.0" prefWidth="65.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="88.0" minWidth="10.0" prefWidth="68.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="91.0" minWidth="10.0" prefWidth="82.0" />
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="111.0" minWidth="10.0" prefWidth="109.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="0.0" prefWidth="0.0" />
+           </columnConstraints>
+           <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="7.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="-Infinity" minHeight="10.0" valignment="CENTER" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="-Infinity" minHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="-Infinity" minHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="-Infinity" minHeight="0.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="-Infinity" minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+          <children>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="65.0" prefWidth="68.0" style="-fx-border-radius: 50px; -fx-background-radius: 60; -fx-background-color: #FE9D12;" text="7" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="81.0" prefWidth="81.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="8" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="67.0" prefWidth="72.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="9" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processOperators" prefHeight="98.0" prefWidth="104.0" style="-fx-background-color: green; -fx-background-radius: 60;" text="/" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="69.0" prefWidth="70.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="4" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="84.0" prefWidth="74.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="5" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="67.0" prefWidth="67.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="6" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processOperators" prefHeight="99.0" prefWidth="103.0" style="-fx-background-radius: 60; -fx-background-color: green;" text="*" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="71.0" prefWidth="69.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="1" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="64.0" prefWidth="67.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="2" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="67.0" prefWidth="72.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="3" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processOperators" prefHeight="99.0" prefWidth="103.0" style="-fx-background-radius: 60; -fx-background-color: green;" text="-" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="67.0" prefWidth="70.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="00" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="65.0" prefWidth="77.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="0" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processNumbers" prefHeight="67.0" prefWidth="66.0" style="-fx-background-radius: 60; -fx-background-color: #FE9D12;" text="." textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processOperators" prefHeight="99.0" prefWidth="103.0" style="-fx-background-radius: 60; -fx-background-color: green;" text="+" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processOperators" prefHeight="99.0" prefWidth="103.0" style="-fx-background-color: green; -fx-border-radius: 30; -fx-background-radius: 60;" text="\%" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+              <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#processOperators" prefHeight="99.0" prefWidth="103.0" style="-fx-background-radius: 60; -fx-background-color: blue;" text="=" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                 <font>
+                     <Font name="System Bold" size="21.0" />
+                 </font>
+              </Button>
+            <Button alignment="CENTER" centerShape="false" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#clearOutput" prefHeight="84.0" prefWidth="74.0" style="-fx-background-radius: 60; -fx-background-color: red;" text="AC" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+          </children>
+       </GridPane>
+      <Label fx:id="output" alignment="BOTTOM_RIGHT" contentDisplay="RIGHT" layoutX="1.0" prefHeight="89.0" prefWidth="400.0" style="-fx-background-color: black;" text="0" textFill="WHITE">
+         <font>
+            <Font size="37.0" />
+         </font>
+         <padding>
+            <Insets right="25.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>
